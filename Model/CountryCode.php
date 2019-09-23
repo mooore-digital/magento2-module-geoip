@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Mooore\GeoIp\Model;
 
+use Magento\Framework\HTTP\PhpEnvironment\RemoteAddress;
 use Mooore\GeoIp\Api\CountryCodeInterface;
 
 class CountryCode implements CountryCodeInterface
@@ -29,10 +30,15 @@ class CountryCode implements CountryCodeInterface
      * @var WebserviceInterface
      */
     private $webservice;
+    /**
+     * @var RemoteAddress
+     */
+    private $remoteAddress;
 
-    public function __construct(WebserviceInterface $webservice)
+    public function __construct(WebserviceInterface $webservice, RemoteAddress $remoteAddress)
     {
         $this->webservice = $webservice;
+        $this->remoteAddress = $remoteAddress;
     }
 
     /**
@@ -79,17 +85,7 @@ class CountryCode implements CountryCodeInterface
     private function webservice(): string
     {
         return $this->webservice->getCountryCode(
-            $this->getRemoteAddress()
+            $this->remoteAddress->getRemoteAddress()
         );
-    }
-
-    /**
-     * Get IP address.
-     *
-     * @return string
-     */
-    private function getRemoteAddress(): string
-    {
-        return getenv(self::ENV_REMOTE_ADDRESS);
     }
 }
