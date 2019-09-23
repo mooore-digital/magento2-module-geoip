@@ -4,8 +4,8 @@ Magento 2 module providing basic Geo IP detection.
 ## API
 
 ### REST
-```
-$ curl https://<<magento site>>/rest/V1/countryCode
+```bash
+$ curl https://<magento site>/rest/V1/countryCode
 "NL"                                                                                                                                                                                                                        
 ```
 
@@ -38,7 +38,7 @@ class SomeComponent
 ```
 
 ## Installation
-```shell script
+```bash
 composer require marissen/magento2-module-geoip
 bin/magento setup:upgrade
 ```
