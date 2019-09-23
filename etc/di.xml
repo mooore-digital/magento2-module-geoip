@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Mooore\GeoIp\Api\CountryCodeInterface"
+                type="Mooore\GeoIp\Model\CountryCode"/>
+    <preference for="Mooore\GeoIp\Model\WebserviceInterface"
+                type="Mooore\GeoIp\Model\IpInfo"/>
+</config>
