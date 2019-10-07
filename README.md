@@ -39,7 +39,7 @@ class SomeComponent
 
 ## Installation
 ```bash
-composer require marissen/magento2-module-geoip
+composer require mooore/magento2-module-geoip
 bin/magento setup:upgrade
 ```
 
