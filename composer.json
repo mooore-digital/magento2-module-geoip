@@ -9,12 +9,12 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Marissen e-commerce",
-      "homepage": "https://www.marissen.net"
+      "name": "Mooore Digital",
+      "homepage": "https://www.mooore.nl"
     }
   ],
   "support": {
-    "source": "https://github.com/marissen/magento2-module-geoip.git"
+    "source": "https://github.com/mooore-digital/magento2-module-geoip.git"
   },
   "autoload": {
     "files": [
