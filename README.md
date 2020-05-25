@@ -51,7 +51,7 @@ This module has a fallback reliance on several inputs:
 4. [IpInfo.io](https://ipinfo.io/) API.
 
 To be able to fall back on IpInfo.io, follow these steps:
-1. Have an account at [ipinfo.io](https://ipinfo.io/).
+1. Have an account at [ipinfo.io](https://ipinfo.io/) (usage is free for 50k requests per month).
 2. Have the ipinfo.io API key.
 3. Configure it in the Magento 2 backend (Advanced -> System -> GeoIP):
 ![Configuration](docs/configuration.png)
