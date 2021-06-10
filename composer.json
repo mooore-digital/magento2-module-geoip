@@ -3,7 +3,7 @@
   "description": "Magento 2 module providing basic Geo IP detection.",
   "type": "magento2-module",
   "require": {
-    "magento/framework": "^102.0",
+    "magento/framework": "^103.0",
     "psr/log": "^1.0"
   },
   "license": "MIT",
